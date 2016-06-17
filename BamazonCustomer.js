@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 
 connection.connect(function (err) {
     if (err) throw err;
-   console.log('good to go');
+   console.log('Welcome to Our store please proceed to view our available selection');
         
 })
 
@@ -33,7 +33,7 @@ connection.query('SELECT * FROM Products', function (err, res) {
 
      type: 'input',
         name: 'askID',
-        message: 'How many of that item would you like?',
+        message: 'What Quantity Would you like to Purchase?',
 
     }]);
 });
